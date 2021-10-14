@@ -12,3 +12,4 @@ Currency Converter App ( we can convert from pounds to euro)
 Sound Recorder App ( That record and plays voice base on command given)
 Calculator App
 Bmi Calculator App ( body count app)
+Most especially a very big thanks to my senior dev *Eduardo Gullo* that assisted during the creation of this project :)
