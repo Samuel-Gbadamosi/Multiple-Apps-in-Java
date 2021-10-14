@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/blogready"
+        android:title="My Blog" />
+
+    <item
+        android:id="@+id/bartex"
+        android:title="Animation Glow" />
+
+    <item
+        android:id="@+id/loveCalculator"
+        android:title="Love Calculator" />
+
+    <item
+        android:id="@+id/BMI_PAGE"
+        android:title="BMI PAGE" />
+
+    <item
+        android:id="@+id/dice"
+        android:title="Dice Game" />
+
+    <item
+        android:id="@+id/Calc"
+        android:title="Calculator" />
+
+
+    <item
+        android:id="@+id/audioRec"
+        android:title="Audio Recorder" />
+
+    <item
+        android:id="@+id/currencyPage"
+        android:title="currencyPage" />
+    <item
+        android:id="@+id/TorchPage"
+        android:title="Torch Light" />
+
+    <item
+        android:id="@+id/cam"
+        android:title="Camera" />
+
+
+    <item
+        android:id="@+id/countdown"
+        android:title="Count Down" />
+
+</menu>

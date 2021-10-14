@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/blog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BlogActivity">
+
+    <ScrollView
+        android:id="@+id/blogready"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DBEDEF"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_weight="1" />
+
+
+            <ImageButton
+                android:id="@+id/imageButton9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:drawingCacheQuality="auto"
+                android:foregroundGravity="center"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/blogready"
+                app:srcCompat="@drawable/robot" />
+
+
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:text="Welcome to Our Blog"
+                android:textAlignment="center"
+                android:textColor="#00BCD4"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="The iPhone 13 is here, and we have all the details on the new iPhones, including a smaller notch, brighter displays, faster A15 Bionic chip and serious camera upgrades. The battery life is longer, too.   See our iPhone 13 Pro Max review, iPhone 13 review, iPhone 13 Pro review and iPhone 13 mini review to see how each of these phones fared in our testing.   The cinematic video mode is the coolest upgrade so far, which holds focus on the subject as it moves. It can blur out the background and automatically change the focus as you shoot. You can also tap to shift focus at any time.   Meanwhile, the iPhone 13 Pro series delivers 120Hz ProMotion displays and an all-new camera system that includes a 6-element, ultra-wide lens and 3x optical zoom. You also get macro photography capabilities, larger batteries and a new sierra blue color.   Here's everything we know about the new iPhone 13 and iPhone 13 Pro so far, including the release date, prices, specs, deals and more."
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Part of the Simpson family"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/homerTwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:filterTouchesWhenObscured="false"
+                    android:onClick="bartClick"
+                    app:srcCompat="@drawable/homer" />
+
+                <ImageButton
+                    android:id="@+id/bartPic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:filterTouchesWhenObscured="false"
+                    android:onClick="bartClick"
+                    app:srcCompat="@drawable/bart" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Having created the layout to hold the individual posts coming from Firebase, it's time to create our Recyclerview Layout in the content_main.xml. This view will hold the Cards we just created in the layout above. So open your content_main.xml file (came with the basic activity template) and create your Recyclerview A new instance of the FirebaseRecyclerAdapter will then take in all the four parameters which are basically the components we'll need to successfully bind the in-coming data to the viewholders ( i.e the display layout, the Blogzone class, the ViewHolder class and the database instance). The FirebaseRecyclerAdapter will implement a protected method called populateViewHolder() which takes in three parameters as well (the Blogzone model class, the ViewHolder class and an integer variable called position). With these, we can go ahead and populate our viewHolder class"
+                android:textAlignment="viewStart"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="center"
+                app:srcCompat="@drawable/br" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text='Guadagnaci Ricevi un compenso per il tuo lavoro. Google AdSense può mostrare automaticamente annunci mirati e pertinenti sul tuo blog e tu potrai trasformare in reddito la pubblicazione di ciò che ami. The Tech World has evolved to different distribution of many ideas and multi sectors of programmers developing new ideas daily'
+                android:textAlignment="textStart"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:scaleType="center"
+                app:srcCompat="@drawable/tech" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Urgent!! Iphone 13 Coming soon!!"
+                android:textAlignment="center"
+                android:textColor="#DC4242"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RatingBar
+                android:id="@+id/ratingBarT"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:numStars="5"
+                android:rating="0.0"
+                android:stepSize="1.0" />
+
+            <TextView
+                android:id="@+id/myTexooooo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result :" />
+
+            <Button
+                android:id="@+id/rateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Rate Our Site" />
+
+            <ImageButton
+                android:id="@+id/imageButton10"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                app:srcCompat="@drawable/iphone"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="590dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/socialtwo" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

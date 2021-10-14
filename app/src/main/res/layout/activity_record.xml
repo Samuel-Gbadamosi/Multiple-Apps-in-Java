@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--XML code for activity_main.xml-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/audioRec"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEF87851"
+    android:orientation="horizontal"
+    tools:context=".RecordActivity">
+
+    <!--Heading Text View-->
+    <TextView
+        android:id="@+id/txthead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Audio_recorder"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--This will display the status of our app when
+        we will record some audio and play that audio-->
+
+    <!--Linear Layout for adding textviews
+        in horizontal manner-->
+
+
+    <!--Textview to start audio recording
+            drawableTop will add above mic image-->
+
+    <!--Textview to stop audio recording
+            drawableTop will add above mic image-->
+
+    <!--Textview to play audio that is recorded
+            drawableTop will add above mic image-->
+
+    <!--Textview to pause the play of audio recording
+            drawableTop will add above mic image-->
+
+
+    <TextView
+        android:id="@+id/idTVstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Status"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthead" />
+
+    <TextView
+        android:id="@+id/btnRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/purple_500"
+        android:padding="5dp"
+        android:text="start_rec"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/purple_500"
+        android:padding="5dp"
+        android:text="pause"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnRecord"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/purple_500"
+        android:padding="5dp"
+        android:text="play_rec"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@+id/btnStop"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/btnStopPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="3dp"
+        android:background="@color/purple_500"
+        android:lines="2"
+        android:padding="5dp"
+        android:text="stop_rec"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.607"
+        app:layout_constraintStart_toEndOf="@+id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="77dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="147dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTVstatus"
+        app:srcCompat="@drawable/play_record" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/idTVstatus"
+        app:srcCompat="@drawable/stop_record" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="72dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="207dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/idTVstatus"
+        app:srcCompat="@drawable/start_record" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="79dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="188dp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/idTVstatus"
+        app:srcCompat="@drawable/pause_record" />
+</androidx.constraintlayout.widget.ConstraintLayout>
